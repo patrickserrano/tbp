@@ -1,0 +1,304 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+  color: #C7CDD5;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
+}
+
+
+::-moz-selection {
+  background: #343434;
+  text-shadow: none;
+}
+
+::selection {
+  background: #343434;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+/* ===== Initializr Styles ==================================================
+ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+ ========================================================================== */
+a {
+  text-decoration: none;
+  color: #C7CDD5;
+}
+
+a:hover {
+  color: #6c6c6c;
+}
+
+body {
+  font: 16px/22px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d1d;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* ==============
+  MOBILE: Menu
+ ============== */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+
+  color: white;
+  background: #000;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  background: #343434;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* ==============
+  MOBILE: Main
+ ============== */
+
+.main {
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.footer-container footer {
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* ==========================================================================
+ Author's custom styles
+ ========================================================================== */
+
+.main {
+  max-width: 55%;
+  text-align: center;
+}
+
+.main-container {
+  flex: 1;
+}
+
+.greeting h1 {
+  font-size: 3em;
+  font-weight: 300;
+  margin-bottom: .3em;
+  line-height: 1;
+}
+
+.greeting:after {
+  float: both;
+}
+
+.date {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 0.9em;
+  margin-top: 0.2%;
+}
+
+/* ==========================================================================
+ Media Queries
+ ========================================================================== */
+
+@media only screen and (min-width: 375px) {
+
+  /* ====================
+  INTERMEDIATE: Menu
+ ==================== */
+  .main {
+    max-width: 80%;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 18px 2%;
+    margin-bottom: 0;
+    border-radius: 3px;
+  }
+
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+  h1 {
+    line-height: 1.1;
+  }
+
+  .thumb {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ========================
+  INTERMEDIATE: IE Fixes
+ ======================== */
+
+  nav ul li {
+    display: inline;
+  }
+
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* ============
+  WIDE: Menu
+ ============ */
+
+  .title {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+  /* ============
+  WIDE: Main
+ ============ */
+  .main {
+    max-width: 55%;
+  }
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+
+  /* ===============
+  Maximal Width
+ =============== */
+
+  .wrapper {
+    width: 1026px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+
+/* ==========================================================================
+ Helper classes
+ ========================================================================== */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
